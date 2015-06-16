@@ -75,14 +75,14 @@ Or a subset of configurations
 To display the command line options for setup_winrt.bat
     `setup_winrt.bat -h`
 
-Note that x64 CMake generation support is as follows:
-------------------------------
+**Note that x64 CMake generation support is as follows:**
+
 Platform\Version | 8.0 | 8.1 |
 -----------------|-----|-----|
 Windows Phone    | No  | No  |
 Windows Store    | Yes | Yes |
 
-Note: setup_winrt.bat calls the unsigned PowerShell script with the -ExecutionPolicy Unrestricted option.
+**Note:** setup_winrt.bat calls the unsigned PowerShell script with the -ExecutionPolicy Unrestricted option.
 
 
 ####CMake command line options for Windows Phone and Store
@@ -132,12 +132,13 @@ mkdir bin
 cd bin
 cmake -G "Visual Studio 12 2013" -DCMAKE_SYSTEM_NAME=WindowsPhone -DCMAKE_SYSTEM_VERSION=8.1 ../
 ```
-
+---
 #### VS2015 branches
+---
 There are VS2015 branches in the repo tested with VS2015RC on Windows 10 Insider Preview (10074).
 
 ##### Test-vs2015 branch
-Branch contains pregenerated solutions for VS2015RC in *bin_VS2015_RC* directory (*bin* directory contains solutions for VS2015 CTP6 however support of these solutions is dorpped and correct work is not guaranteed) with accuracy and performance tests enabled.
+Branch contains pregenerated solutions for VS2015RC in *bin_VS2015_RC* directory (*bin* directory contains solutions for VS2015 CTP6 however support of these solutions is dropped and correct work is not guaranteed) with accuracy and performance tests enabled.
 
 Follow instructions below to get OpenCV binaries on Windows 10 VS2015RC.
 
@@ -218,7 +219,8 @@ both installed
  1. Install VS2013 Community (w/ Windows 8.0 tools checkbox enabled) and VS2012 Express For Desktop to have all required SDKs
  2. Open setup_winrt.ps1 and change `[ValidateSet("Visual Studio 12 2013","Visual Studio 11 2012")]` to `[ValidateSet("Visual Studio 12 2013","Visual Studio 11 2012","Visual Studio 14 2015")]`
  3. Specify generator explicitly using -g script option e.g. `-g "Visual Studio 14 2015"`
- More details [there](https://github.com/MSOpenTech/opencv/issues/46)
+ 
+More details [there](https://github.com/MSOpenTech/opencv/issues/46)
 
 #### Resources
 

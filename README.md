@@ -220,7 +220,7 @@ both installed
  2. Open setup_winrt.ps1 and change `[ValidateSet("Visual Studio 12 2013","Visual Studio 11 2012")]` to `[ValidateSet("Visual Studio 12 2013","Visual Studio 11 2012","Visual Studio 14 2015")]`
  3. Specify generator explicitly using -g script option e.g. `-g "Visual Studio 14 2015"`
  
-More details [there](https://github.com/MSOpenTech/opencv/issues/46)
+ More details [there](https://github.com/MSOpenTech/opencv/issues/46)
 
 #### Resources
 
